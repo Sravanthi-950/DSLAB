@@ -51,7 +51,7 @@ void display(struct queue *q)
 		return;
 	}
 	struct node *temp = q->front;
-	printf("\nQueue : ");
+	printf("\nQUEUE : ");
 	while(temp)
 	{
 		printf("%d",temp->data);
@@ -64,6 +64,8 @@ int main()
 	struct queue q;
 	q.front = NULL;
 	q.rear = NULL;
+	
+	
 	do
 	{
 		printf("\n *****MAIN MENU*****");
@@ -73,7 +75,7 @@ int main()
 		printf("\n 4. DISPLAY");
 		printf("\n 5. EXIT");
 		printf("\n Enter your option : ");
-		scanf("%d", &val);
+		scanf("%d", &option);
 		switch(option)
 		{
 			case 1:
